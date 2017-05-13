@@ -19,8 +19,6 @@
   src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff') format('woff');
 }
 
-@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-
 html {
    font-family: 'Godo', sans-serif;
 }
@@ -32,13 +30,61 @@ html {
 
 .center-aligned {
 	display: table;
-	width: 96%;
+	width: 100%;
 }
 
 .center-core {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+}
+
+#menu-bar {
+	height: 40px;
+	width: 1200px;
+}
+
+#menu-bar ul li {
+	list-style: none;
+	color: white;
+	background-color: #2d2d2d;
+	float: left;
+	line-height: 34px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.menuLink {
+	text-decoration: none;
+	font-family: 'Godo', sans-serif;
+	color: #ffffff;
+	display: block;
+	width: 200px;
+	font-size: 15px;
+}
+
+#intro:hover {
+	text-decoration: none;
+	color: #8eb4e3;
+	background-color: #4d4d4d;
+}
+
+#board:hover {
+	text-decoration: none;
+	color: #c3d69b;
+	background-color: #4d4d4d;
+}
+
+#log:hover {
+	text-decoration: none;
+	color: #ffd85d;
+	background-color: #4d4d4d;
+}
+
+#menu-bar ul {
+	display: table;
+  	margin-left: auto;
+  	margin-right: auto;
 }
 
 .content {
@@ -69,6 +115,8 @@ html {
 	margin-bottom: 70px;
 }
 
-.post h1 a, .post h1 a:visited {
+.post a, .post a:visited {
+	font-family: 'Godo', sans-serif;
 	color: #000000;
 }
+
