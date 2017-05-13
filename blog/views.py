@@ -9,6 +9,24 @@ def main(request):
 	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	return render(request, 'blog/post_list.html', {'posts':posts}) #request와 템플릿을 받아 내용이 리턴 브러우저로
 
+def intro(request):
+	return render(request, 'blog/intro.html', {}) #request와 템플릿을 받아 내용이 리턴 브러우저로
+
+def intro_task(request):
+	return render(request, 'blog/intro_task.html', {}) #request와 템플릿을 받아 내용이 리턴 브러우저로
+
+def notice(request):
+	return render(request, 'blog/notice.html', {}) #request와 템플릿을 받아 내용이 리턴 브러우저로
+
+def qna(request):
+	return render(request, 'blog/qna.html', {}) #request와 템플릿을 받아 내용이 리턴 브러우저로
+
+def login(request):
+	return render(request, 'blog/login.html', {}) #request와 템플릿을 받아 내용이 리턴 브러우저로
+
+def login(request):
+	return render(request, 'blog/logout.html', {}) #request와 템플릿을 받아 내용이 리턴 브러우저로
+
 def post_list(request):
 	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	return render(request, 'blog/post_list.html', {'posts':posts}) #request와 템플릿을 받아 내용이 리턴 브러우저로

@@ -19,8 +19,16 @@
 		</div>
 		<nav class="manu-val">
 			<ul>
-				<li><a href="#">소개</a></li>
-				<li><a href="#"
+				<li><a href="{% url 'intro' %}">소개</a></li>
+				<li><a href="{% url 'intro_task' %}">사업소개</a></li>
+				<li><a href="{% url 'notice' %}">공지사항</a></li>
+				<li><a href="{% url 'qna' %}">Q&A</a></li>
+				{% if user.is_authenticated %}
+					<li><a href="{% url 'login' %}">로그인</a></li>
+				{% else %}
+					<li><a href="{% url 'logout' %}">로그아웃</a></li>
+				{% endif %}
+
 			{% if user.is_authenticated %}
 				<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon-plus"></span></a>
 			{% endif %}
