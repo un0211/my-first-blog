@@ -2,20 +2,28 @@
 
 <html>
 	<head>
-		<title> Django Girls blog</title>
+		<title>KAIST 학생복지위원회</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-		<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="page-header">
+			<div class="center-aligned">
+				<div class="center-core">
+					<a href="{% url 'main' %}">
+						<img src="/static/image/logo.png" border="0">
+					</a>
+				</div> 
+			</div>
+		</div>
+		<nav class="manu-val">
+			<ul>
+				<li><a href="#">소개</a></li>
+				<li><a href="#"
 			{% if user.is_authenticated %}
 				<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon-plus"></span></a>
 			{% endif %}
-			<h1><a href="/">Django Girls Blog</a></h1>
-		</div>
-
 		<div class="content container">
 			<div class="row">
 				<div class="col-md-8">

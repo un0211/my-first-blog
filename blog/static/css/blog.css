@@ -1,21 +1,48 @@
-.page-header {
-	background-color: #ffbb45;
-	margin-top: 0;
-	padding: 20px 20px 20px 40px;
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-	color: #ffffff;
-	font-size: 36pt;
-	text-decoration: none;
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Youth';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff') format('woff');
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+html {
+   font-family: 'Godo', sans-serif;
+}
+
+.page-header {
+	background-color: #ffffff;
+	margin-top: 0;
+} 
+
+.center-aligned {
+	display: table;
+	width: 96%;
+}
+
+.center-core {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .content {
 	margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-	font-family: 'Lobster', cursive;
 }
 
 .date {
@@ -32,7 +59,7 @@ h1, h2, h3, h4 {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-	color: #ffffff;
+	color: #828282;
 	float: right;
 	font-size: 26pt;
 	margin-right:20px;
